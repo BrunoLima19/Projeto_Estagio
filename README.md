@@ -1,4 +1,4 @@
-# PROJETO ESTÁGIO - RECUPERA PREÇO
+# PROJETO ESTÁGIO - RECUPERA COMPRA
 
 Neste projeto, foi desenvolvido um sistema utilizando o framework Laravel para criar uma aplicação web com funcionalidades de registro de usuários, login e um painel de controle para gerenciamento dos usuários cadastrados. O objetivo principal era permitir que apenas usuários registrados tivessem acesso à plataforma, enquanto fornecia aos administradores a capacidade de editar informações dos usuários, bem como pesquisar por nome e email.
 
