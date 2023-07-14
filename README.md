@@ -1,66 +1,49 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# PROJETO ESTÁGIO - RECUPERA PREÇO
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Neste projeto, foi desenvolvido um sistema utilizando o framework Laravel para criar uma aplicação web com funcionalidades de registro de usuários, login e um painel de controle para gerenciamento dos usuários cadastrados. O objetivo principal era permitir que apenas usuários registrados tivessem acesso à plataforma, enquanto fornecia aos administradores a capacidade de editar informações dos usuários, bem como pesquisar por nome e email.
 
-## About Laravel
+**Descrição do Projeto:** O projeto foi implementado utilizando o Laravel, um framework PHP popular e robusto, conhecido por sua facilidade de uso e recursos poderosos. A estrutura MVC (Model-View-Controller) do Laravel foi adotada para garantir uma separação clara das preocupações e facilitar a manutenção e escalabilidade do código.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+**Como executar o projeto:** Para executa-lo é bem simples, primeiro abra o terminal e digite 'php artisan serve', feito isso, abra outro terminal e digite 'npm run dev'. Assim, pode registrar seu usuário e entrar no dashboard para conferir o projeto. 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Linguagem utilizada:
+![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Framework utilizado:
+![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white)
 
-## Learning Laravel
+## Banco de dados utilizado:
+![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Controle de versão:
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Tela de Registro
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+A tela de registro foi projetada para permitir que novos usuários se cadastrem no sistema. Nela, foram solicitadas informações como nome, email e senha. Utilizando recursos do Laravel, foi possível validar e armazenar os dados do usuário de forma segura no banco de dados.
 
-## Laravel Sponsors
+![registro](https://github.com/BrunoLima19/Projeto_Estagio/assets/70240811/d460db94-4419-479b-9881-5d5704f9a334)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Tela de Login
 
-### Premium Partners
+A tela de login foi desenvolvida para autenticar os usuários registrados no sistema. Os dados fornecidos pelos usuários foram verificados em relação às informações armazenadas no banco de dados. Utilizei o mecanismo de autentificação do Laravel, o que tornou a implementação dessa funcionalidade rápida e segura.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+![login](https://github.com/BrunoLima19/Projeto_Estagio/assets/70240811/d230d132-590d-42c2-8b10-2d98063a57e9)
 
-## Contributing
+## Painel de Controle - Dashboard
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Após o login, os usuários autorizados são redirecionados para o painel de controle. Essa área é restrita aos usuários autenticados e possui recursos para gerenciar os dados dos usuários cadastrados. Na lista de usuários, os administradores têm a opção de editar o nome e o email dos usuários, além de poder excluí-los do sistema. Para facilitar a localização de usuários específicos, foi implementada uma funcionalidade de pesquisa por nome e email, permitindo filtrar rapidamente os resultados.
 
-## Code of Conduct
+![dashboard](https://github.com/BrunoLima19/Projeto_Estagio/assets/70240811/a5a5b662-7108-4504-aeb6-f8c46382ebdb)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+![pesquisa1](https://github.com/BrunoLima19/Projeto_Estagio/assets/70240811/cedf219e-9842-473a-b8f5-150da32b584e)
 
-## Security Vulnerabilities
+![pesquisa3](https://github.com/BrunoLima19/Projeto_Estagio/assets/70240811/9487ffb9-4a84-444a-9558-176f48a2078e)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Tabelas criadas no banco de dados
 
-## License
+![bd](https://github.com/BrunoLima19/Projeto_Estagio/assets/70240811/e327f308-0bd5-4a28-9034-9538c24326a3)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## CONCLUSÃO
+
+Por mais que tenha sido uma linguagem e framework que nunca havia trabalhado, o projeto de desenvolvimento Laravel foi bem-sucedido na criação de um sistema de registro e login, além de um painel de controle para gerenciamento de usuários. O uso do Laravel proporcionou um desenvolvimento eficiente, aproveitando as funcionalidades prontas do framework, como autenticação, validação de dados e manipulação do banco de dados. Com esse projeto, foi possível oferecer uma experiência segura aos usuários registrados, enquanto os administradores têm controle total sobre as informações dos usuários cadastrados. A implementação da pesquisa por nome e email no painel de controle adicionou uma funcionalidade valiosa ao sistema, facilitando a localização de usuários específicos. Em resumo, o projeto demonstrou as capacidades do Laravel em fornecer uma solução completa e eficiente para o gerenciamento de usuários em uma aplicação web.
